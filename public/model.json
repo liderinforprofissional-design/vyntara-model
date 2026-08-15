@@ -13,7 +13,7 @@
           "defenseHome": 0.7198,
           "attackAway": 1.248,
           "defenseAway": 0.8719,
-          "elo": 1567.0
+          "elo": 1567.8
         },
         "118": {
           "name": "Bahia",
@@ -21,7 +21,7 @@
           "defenseHome": 0.8341,
           "attackAway": 1.1826,
           "defenseAway": 1.3026,
-          "elo": 1477.3
+          "elo": 1479.3
         },
         "140": {
           "name": "Criciuma",
@@ -29,7 +29,7 @@
           "defenseHome": 1.4053,
           "attackAway": 0.9,
           "defenseAway": 1.3259,
-          "elo": 1421.8
+          "elo": 1417.6
         },
         "152": {
           "name": "Juventude",
@@ -37,7 +37,7 @@
           "defenseHome": 1.3558,
           "attackAway": 1.1744,
           "defenseAway": 1.2667,
-          "elo": 1469.7
+          "elo": 1459.1
         },
         "124": {
           "name": "Fluminense",
@@ -45,7 +45,7 @@
           "defenseHome": 0.7348,
           "attackAway": 0.7049,
           "defenseAway": 0.7996,
-          "elo": 1498.2
+          "elo": 1500.5
         },
         "794": {
           "name": "RB Bragantino",
@@ -53,7 +53,7 @@
           "defenseHome": 0.9607,
           "attackAway": 0.832,
           "defenseAway": 1.0998,
-          "elo": 1468.2
+          "elo": 1477.5
         },
         "126": {
           "name": "Sao Paulo",
@@ -61,7 +61,7 @@
           "defenseHome": 0.9872,
           "attackAway": 1.0658,
           "defenseAway": 0.933,
-          "elo": 1512.7
+          "elo": 1522.1
         },
         "154": {
           "name": "Fortaleza EC",
@@ -69,7 +69,7 @@
           "defenseHome": 0.3596,
           "attackAway": 1.1202,
           "defenseAway": 1.1998,
-          "elo": 1568.3
+          "elo": 1557.6
         },
         "131": {
           "name": "Corinthians",
@@ -77,7 +77,7 @@
           "defenseHome": 0.916,
           "attackAway": 1.0862,
           "defenseAway": 0.9558,
-          "elo": 1563.0
+          "elo": 1567.4
         },
         "1062": {
           "name": "Atletico-MG",
@@ -85,7 +85,7 @@
           "defenseHome": 1.313,
           "attackAway": 0.8967,
           "defenseAway": 1.0471,
-          "elo": 1470.9
+          "elo": 1464.2
         },
         "133": {
           "name": "Vasco DA Gama",
@@ -93,7 +93,7 @@
           "defenseHome": 1.1191,
           "attackAway": 0.7284,
           "defenseAway": 1.2398,
-          "elo": 1494.6
+          "elo": 1477.7
         },
         "130": {
           "name": "Gremio",
@@ -101,7 +101,7 @@
           "defenseHome": 1.4241,
           "attackAway": 0.9261,
           "defenseAway": 0.8688,
-          "elo": 1479.2
+          "elo": 1482.2
         },
         "134": {
           "name": "Atletico Paranaense",
@@ -109,7 +109,7 @@
           "defenseHome": 1.0769,
           "attackAway": 0.7838,
           "defenseAway": 0.9736,
-          "elo": 1426.0
+          "elo": 1443.8
         },
         "1193": {
           "name": "Cuiaba",
@@ -117,7 +117,7 @@
           "defenseHome": 1.1822,
           "attackAway": 0.5507,
           "defenseAway": 0.8844,
-          "elo": 1393.5
+          "elo": 1417.0
         },
         "144": {
           "name": "Atletico Goianiense",
@@ -125,7 +125,7 @@
           "defenseHome": 1.0657,
           "attackAway": 0.6371,
           "defenseAway": 1.3532,
-          "elo": 1401.4
+          "elo": 1397.7
         },
         "127": {
           "name": "Flamengo",
@@ -133,7 +133,7 @@
           "defenseHome": 1.1095,
           "attackAway": 1.5377,
           "defenseAway": 0.7436,
-          "elo": 1582.2
+          "elo": 1574.6
         },
         "135": {
           "name": "Cruzeiro",
@@ -141,7 +141,7 @@
           "defenseHome": 0.8496,
           "attackAway": 0.7129,
           "defenseAway": 0.9045,
-          "elo": 1478.6
+          "elo": 1488.7
         },
         "120": {
           "name": "Botafogo",
@@ -149,7 +149,7 @@
           "defenseHome": 0.6373,
           "attackAway": 1.3775,
           "defenseAway": 0.5179,
-          "elo": 1636.7
+          "elo": 1622.2
         },
         "136": {
           "name": "Vitoria",
@@ -157,7 +157,7 @@
           "defenseHome": 1.0619,
           "attackAway": 1.1784,
           "defenseAway": 1.0434,
-          "elo": 1505.3
+          "elo": 1504.3
         },
         "121": {
           "name": "Palmeiras",
@@ -165,7 +165,7 @@
           "defenseHome": 0.8776,
           "attackAway": 1.3572,
           "defenseAway": 0.6624,
-          "elo": 1585.5
+          "elo": 1578.6
         }
       }
     },
@@ -180,7 +180,7 @@
           "defenseHome": 1.2266,
           "attackAway": 1.2266,
           "defenseAway": 1.2421,
-          "elo": 1470.4
+          "elo": 1458.0
         },
         "125": {
           "name": "America Mineiro",
@@ -188,7 +188,7 @@
           "defenseHome": 0.8217,
           "attackAway": 0.7763,
           "defenseAway": 0.8734,
-          "elo": 1524.4
+          "elo": 1540.4
         },
         "7834": {
           "name": "Novorizontino",
@@ -196,7 +196,7 @@
           "defenseHome": 0.9206,
           "attackAway": 1.102,
           "defenseAway": 0.58,
-          "elo": 1549.4
+          "elo": 1550.2
         },
         "146": {
           "name": "CRB",
@@ -204,7 +204,7 @@
           "defenseHome": 1.0928,
           "attackAway": 1.0192,
           "defenseAway": 1.044,
-          "elo": 1461.7
+          "elo": 1473.0
         },
         "1223": {
           "name": "Operario-PR",
@@ -212,7 +212,7 @@
           "defenseHome": 0.8294,
           "attackAway": 0.7258,
           "defenseAway": 0.788,
-          "elo": 1539.1
+          "elo": 1525.2
         },
         "145": {
           "name": "Avai",
@@ -220,7 +220,7 @@
           "defenseHome": 0.7925,
           "attackAway": 0.8046,
           "defenseAway": 0.7863,
-          "elo": 1503.4
+          "elo": 1505.2
         },
         "132": {
           "name": "Chapecoense-sc",
@@ -228,7 +228,7 @@
           "defenseHome": 1.5264,
           "attackAway": 0.8657,
           "defenseAway": 0.8424,
-          "elo": 1472.1
+          "elo": 1460.2
         },
         "7779": {
           "name": "Ituano",
@@ -236,7 +236,7 @@
           "defenseHome": 1.4523,
           "attackAway": 1.4481,
           "defenseAway": 1.4655,
-          "elo": 1422.3
+          "elo": 1428.0
         },
         "128": {
           "name": "Santos",
@@ -244,7 +244,7 @@
           "defenseHome": 0.8162,
           "attackAway": 1.4185,
           "defenseAway": 0.7804,
-          "elo": 1566.5
+          "elo": 1569.6
         },
         "149": {
           "name": "Paysandu",
@@ -252,7 +252,7 @@
           "defenseHome": 0.9224,
           "attackAway": 1.2561,
           "defenseAway": 1.0888,
-          "elo": 1512.2
+          "elo": 1504.5
         },
         "10862": {
           "name": "Amazonas",
@@ -260,7 +260,7 @@
           "defenseHome": 1.098,
           "attackAway": 0.5152,
           "defenseAway": 0.7293,
-          "elo": 1499.6
+          "elo": 1484.4
         },
         "123": {
           "name": "Sport Recife",
@@ -268,7 +268,7 @@
           "defenseHome": 1.1315,
           "attackAway": 1.334,
           "defenseAway": 0.7074,
-          "elo": 1561.9
+          "elo": 1574.1
         },
         "129": {
           "name": "Ceara",
@@ -276,7 +276,7 @@
           "defenseHome": 0.7332,
           "attackAway": 1.4698,
           "defenseAway": 1.0462,
-          "elo": 1561.7
+          "elo": 1570.5
         },
         "151": {
           "name": "Goias",
@@ -284,7 +284,7 @@
           "defenseHome": 0.694,
           "attackAway": 1.3942,
           "defenseAway": 0.7463,
-          "elo": 1569.2
+          "elo": 1588.6
         },
         "139": {
           "name": "Ponte Preta",
@@ -292,7 +292,7 @@
           "defenseHome": 1.5732,
           "attackAway": 0.705,
           "defenseAway": 1.2316,
-          "elo": 1405.0
+          "elo": 1406.6
         },
         "147": {
           "name": "Coritiba",
@@ -300,7 +300,7 @@
           "defenseHome": 1.1286,
           "attackAway": 0.9869,
           "defenseAway": 1.1476,
-          "elo": 1477.0
+          "elo": 1479.2
         },
         "142": {
           "name": "Vila Nova",
@@ -308,7 +308,7 @@
           "defenseHome": 1.3058,
           "attackAway": 0.6399,
           "defenseAway": 1.4154,
-          "elo": 1485.8
+          "elo": 1455.6
         },
         "138": {
           "name": "Guarani Campinas",
@@ -316,7 +316,7 @@
           "defenseHome": 0.9362,
           "attackAway": 0.8878,
           "defenseAway": 1.4144,
-          "elo": 1419.6
+          "elo": 1432.0
         },
         "1211": {
           "name": "Brusque",
@@ -324,7 +324,7 @@
           "defenseHome": 0.6951,
           "attackAway": 0.4957,
           "defenseAway": 1.2761,
-          "elo": 1418.6
+          "elo": 1424.2
         },
         "7848": {
           "name": "Mirassol",
@@ -332,7 +332,7 @@
           "defenseHome": 0.3177,
           "attackAway": 0.9361,
           "defenseAway": 0.7814,
-          "elo": 1580.0
+          "elo": 1570.6
         }
       }
     },
@@ -347,7 +347,7 @@
           "defenseHome": 0.2,
           "attackAway": 0.2,
           "defenseAway": 1.672,
-          "elo": 1499.7
+          "elo": 1496.0
         },
         "1198": {
           "name": "Remo",
@@ -355,7 +355,7 @@
           "defenseHome": 1.0,
           "attackAway": 0.2,
           "defenseAway": 0.836,
-          "elo": 1490.2
+          "elo": 1493.4
         },
         "18307": {
           "name": "Nova Venécia",
@@ -363,7 +363,7 @@
           "defenseHome": 2.0757,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1489.8
         },
         "2618": {
           "name": "Botafogo SP",
@@ -371,7 +371,7 @@
           "defenseHome": 0.4494,
           "attackAway": 1.4853,
           "defenseAway": 1.3116,
-          "elo": 1511.0
+          "elo": 1507.3
         },
         "12925": {
           "name": "Real FC",
@@ -379,7 +379,7 @@
           "defenseHome": 2.1056,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1495.7
+          "elo": 1490.9
         },
         "1218": {
           "name": "Sao Raimundo",
@@ -387,7 +387,7 @@
           "defenseHome": 1.0,
           "attackAway": 1.0378,
           "defenseAway": 1.672,
-          "elo": 1490.2
+          "elo": 1493.4
         },
         "2221": {
           "name": "River AC",
@@ -403,7 +403,7 @@
           "defenseHome": 0.5687,
           "attackAway": 0.3786,
           "defenseAway": 1.8981,
-          "elo": 1510.8
+          "elo": 1504.6
         },
         "18308": {
           "name": "Manauara",
@@ -411,7 +411,7 @@
           "defenseHome": 2.0757,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1489.8
         },
         "13098": {
           "name": "Retrô",
@@ -419,7 +419,7 @@
           "defenseHome": 1.0,
           "attackAway": 0.9939,
           "defenseAway": 0.4003,
-          "elo": 1516.4
+          "elo": 1512.7
         },
         "7864": {
           "name": "Sousa",
@@ -427,7 +427,7 @@
           "defenseHome": 0.4034,
           "attackAway": 0.2,
           "defenseAway": 2.5081,
-          "elo": 1506.5
+          "elo": 1500.4
         },
         "135": {
           "name": "Cruzeiro",
@@ -435,7 +435,7 @@
           "defenseHome": 1.0,
           "attackAway": 0.2,
           "defenseAway": 1.672,
-          "elo": 1490.2
+          "elo": 1489.6
         },
         "2204": {
           "name": "AO Itabaiana",
@@ -443,7 +443,7 @@
           "defenseHome": 1.0378,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1489.8
         },
         "2208": {
           "name": "Brasiliense",
@@ -451,7 +451,7 @@
           "defenseHome": 1.0378,
           "attackAway": 1.0378,
           "defenseAway": 0.2,
-          "elo": 1511.6
+          "elo": 1507.7
         },
         "7787": {
           "name": "Treze",
@@ -467,7 +467,7 @@
           "defenseHome": 1.0378,
           "attackAway": 1.0378,
           "defenseAway": 0.836,
-          "elo": 1500.4
+          "elo": 1500.3
         },
         "7852": {
           "name": "Anápolis",
@@ -483,7 +483,7 @@
           "defenseHome": 1.0,
           "attackAway": 0.2,
           "defenseAway": 0.836,
-          "elo": 1490.2
+          "elo": 1493.4
         },
         "13107": {
           "name": "Audax Rio",
@@ -499,7 +499,7 @@
           "defenseHome": 0.2,
           "attackAway": 0.2,
           "defenseAway": 0.2,
-          "elo": 1500.4
+          "elo": 1500.6
         },
         "2216": {
           "name": "Moto Club",
@@ -507,7 +507,7 @@
           "defenseHome": 3.0,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1476.4
         },
         "118": {
           "name": "Bahia",
@@ -515,7 +515,7 @@
           "defenseHome": 0.4066,
           "attackAway": 1.493,
           "defenseAway": 0.6871,
-          "elo": 1525.1
+          "elo": 1535.1
         },
         "10004": {
           "name": "São Luiz",
@@ -523,7 +523,7 @@
           "defenseHome": 1.0378,
           "attackAway": 0.2,
           "defenseAway": 2.5081,
-          "elo": 1500.1
+          "elo": 1493.6
         },
         "7779": {
           "name": "Ituano",
@@ -531,7 +531,7 @@
           "defenseHome": 1.0,
           "attackAway": 1.0378,
           "defenseAway": 1.672,
-          "elo": 1490.2
+          "elo": 1493.4
         },
         "10861": {
           "name": "Independente AP",
@@ -539,7 +539,7 @@
           "defenseHome": 1.0378,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1489.8
         },
         "10862": {
           "name": "Amazonas",
@@ -547,7 +547,7 @@
           "defenseHome": 1.0378,
           "attackAway": 0.6379,
           "defenseAway": 0.3222,
-          "elo": 1503.1
+          "elo": 1502.9
         },
         "13103": {
           "name": "Costa Rica ",
@@ -555,7 +555,7 @@
           "defenseHome": 2.0757,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1489.8
         },
         "2233": {
           "name": "America-RN",
@@ -563,7 +563,7 @@
           "defenseHome": 1.1355,
           "attackAway": 1.4668,
           "defenseAway": 1.3265,
-          "elo": 1501.1
+          "elo": 1507.6
         },
         "13134": {
           "name": "Capital",
@@ -571,7 +571,7 @@
           "defenseHome": 1.0378,
           "attackAway": 0.2,
           "defenseAway": 2.5081,
-          "elo": 1500.0
+          "elo": 1493.4
         },
         "7878": {
           "name": "Tocantinópolis",
@@ -579,7 +579,7 @@
           "defenseHome": 1.0,
           "attackAway": 1.0378,
           "defenseAway": 1.672,
-          "elo": 1490.2
+          "elo": 1493.4
         },
         "2220": {
           "name": "Rio Branco",
@@ -595,7 +595,7 @@
           "defenseHome": 0.908,
           "attackAway": 0.3412,
           "defenseAway": 1.1049,
-          "elo": 1520.7
+          "elo": 1511.4
         },
         "7788": {
           "name": "União Rondonópolis",
@@ -603,7 +603,7 @@
           "defenseHome": 3.0,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1483.9
         },
         "144": {
           "name": "Atletico Goianiense",
@@ -611,7 +611,7 @@
           "defenseHome": 1.4872,
           "attackAway": 1.4734,
           "defenseAway": 0.6288,
-          "elo": 1536.2
+          "elo": 1539.5
         },
         "10679": {
           "name": "Real Noroeste",
@@ -619,7 +619,7 @@
           "defenseHome": 3.0,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1479.7
         },
         "1193": {
           "name": "Cuiaba",
@@ -627,7 +627,7 @@
           "defenseHome": 0.2,
           "attackAway": 1.2248,
           "defenseAway": 0.5696,
-          "elo": 1515.7
+          "elo": 1521.2
         },
         "1194": {
           "name": "Cianorte",
@@ -635,7 +635,7 @@
           "defenseHome": 3.0,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1479.7
         },
         "131": {
           "name": "Corinthians",
@@ -643,7 +643,7 @@
           "defenseHome": 0.468,
           "attackAway": 1.0517,
           "defenseAway": 0.671,
-          "elo": 1537.3
+          "elo": 1543.2
         },
         "7879": {
           "name": "Águia de Marabá",
@@ -651,7 +651,7 @@
           "defenseHome": 1.8107,
           "attackAway": 0.2,
           "defenseAway": 1.672,
-          "elo": 1495.3
+          "elo": 1492.9
         },
         "147": {
           "name": "Coritiba",
@@ -659,7 +659,7 @@
           "defenseHome": 1.0,
           "attackAway": 2.0757,
           "defenseAway": 2.5081,
-          "elo": 1490.2
+          "elo": 1493.4
         },
         "13975": {
           "name": "Athletic Club",
@@ -667,7 +667,7 @@
           "defenseHome": 0.2,
           "attackAway": 0.2,
           "defenseAway": 1.672,
-          "elo": 1499.7
+          "elo": 1496.0
         },
         "7814": {
           "name": "Volta Redonda",
@@ -675,7 +675,7 @@
           "defenseHome": 1.0,
           "attackAway": 0.2,
           "defenseAway": 0.836,
-          "elo": 1490.2
+          "elo": 1493.4
         },
         "15505": {
           "name": "Iguatu",
@@ -691,7 +691,7 @@
           "defenseHome": 1.3245,
           "attackAway": 1.4329,
           "defenseAway": 1.4792,
-          "elo": 1535.6
+          "elo": 1526.6
         },
         "10677": {
           "name": "Marcílio Dias",
@@ -699,7 +699,7 @@
           "defenseHome": 3.0,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1483.9
         },
         "133": {
           "name": "Vasco DA Gama",
@@ -707,7 +707,7 @@
           "defenseHome": 1.3896,
           "attackAway": 1.1253,
           "defenseAway": 1.1462,
-          "elo": 1514.1
+          "elo": 1516.3
         },
         "13114": {
           "name": "Olaria",
@@ -715,7 +715,7 @@
           "defenseHome": 1.0378,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1489.8
         },
         "7865": {
           "name": "São Bernardo",
@@ -723,7 +723,7 @@
           "defenseHome": 2.0757,
           "attackAway": 1.0378,
           "defenseAway": 0.2,
-          "elo": 1500.0
+          "elo": 1494.5
         },
         "7833": {
           "name": "Maringá",
@@ -731,7 +731,7 @@
           "defenseHome": 0.5339,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1495.7
+          "elo": 1500.3
         },
         "125": {
           "name": "America Mineiro",
@@ -739,7 +739,7 @@
           "defenseHome": 1.0,
           "attackAway": 0.2,
           "defenseAway": 1.672,
-          "elo": 1490.2
+          "elo": 1489.6
         },
         "1210": {
           "name": "Murici Fc",
@@ -747,7 +747,7 @@
           "defenseHome": 1.0378,
           "attackAway": 1.0378,
           "defenseAway": 0.836,
-          "elo": 1512.1
+          "elo": 1509.4
         },
         "7772": {
           "name": "Confiança",
@@ -755,7 +755,7 @@
           "defenseHome": 1.0,
           "attackAway": 1.0378,
           "defenseAway": 1.672,
-          "elo": 1490.2
+          "elo": 1493.4
         },
         "7832": {
           "name": "Maranhão",
@@ -763,7 +763,7 @@
           "defenseHome": 2.0757,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1489.8
         },
         "1195": {
           "name": "Ferroviario",
@@ -771,7 +771,7 @@
           "defenseHome": 1.0,
           "attackAway": 1.0099,
           "defenseAway": 0.4067,
-          "elo": 1516.0
+          "elo": 1512.1
         },
         "12299": {
           "name": "Petrolina",
@@ -779,7 +779,7 @@
           "defenseHome": 2.0757,
           "attackAway": 0.2,
           "defenseAway": 0.836,
-          "elo": 1500.0
+          "elo": 1500.1
         },
         "10673": {
           "name": "Cascavel",
@@ -787,7 +787,7 @@
           "defenseHome": 1.0,
           "attackAway": 2.0757,
           "defenseAway": 2.5081,
-          "elo": 1490.2
+          "elo": 1493.4
         },
         "18831": {
           "name": "Itabuna",
@@ -795,7 +795,7 @@
           "defenseHome": 3.0,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1467.8
         },
         "7782": {
           "name": "Nova Iguaçu",
@@ -803,7 +803,7 @@
           "defenseHome": 2.0757,
           "attackAway": 3.0,
           "defenseAway": 0.2,
-          "elo": 1500.0
+          "elo": 1515.4
         },
         "1207": {
           "name": "ASA",
@@ -811,7 +811,7 @@
           "defenseHome": 2.0757,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1483.9
         },
         "119": {
           "name": "Internacional",
@@ -819,7 +819,7 @@
           "defenseHome": 2.0757,
           "attackAway": 1.6091,
           "defenseAway": 0.3758,
-          "elo": 1516.3
+          "elo": 1524.4
         },
         "7869": {
           "name": "Villa Nova",
@@ -827,7 +827,7 @@
           "defenseHome": 1.0538,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1495.3
+          "elo": 1490.3
         },
         "1202": {
           "name": "Aparecidense",
@@ -835,7 +835,7 @@
           "defenseHome": 1.0,
           "attackAway": 0.2,
           "defenseAway": 0.836,
-          "elo": 1490.2
+          "elo": 1493.4
         },
         "10018": {
           "name": "Água Santa",
@@ -843,7 +843,7 @@
           "defenseHome": 1.0378,
           "attackAway": 3.0,
           "defenseAway": 2.5081,
-          "elo": 1512.1
+          "elo": 1509.1
         },
         "7831": {
           "name": "Jacuipense",
@@ -851,7 +851,7 @@
           "defenseHome": 1.0,
           "attackAway": 1.0378,
           "defenseAway": 1.672,
-          "elo": 1490.2
+          "elo": 1493.4
         },
         "10023": {
           "name": "Portuguesa Santista",
@@ -859,7 +859,7 @@
           "defenseHome": 1.0378,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1489.8
         },
         "7770": {
           "name": "Caxias",
@@ -867,7 +867,7 @@
           "defenseHome": 2.0757,
           "attackAway": 1.0378,
           "defenseAway": 0.2,
-          "elo": 1512.0
+          "elo": 1508.4
         },
         "12916": {
           "name": "GAS",
@@ -875,7 +875,7 @@
           "defenseHome": 1.0378,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1489.8
         },
         "1211": {
           "name": "Brusque",
@@ -883,7 +883,7 @@
           "defenseHome": 1.0378,
           "attackAway": 1.4556,
           "defenseAway": 1.602,
-          "elo": 1493.7
+          "elo": 1493.6
         },
         "2217": {
           "name": "Operario Ferroviario",
@@ -899,7 +899,7 @@
           "defenseHome": 0.2,
           "attackAway": 1.0466,
           "defenseAway": 1.1384,
-          "elo": 1503.8
+          "elo": 1504.7
         },
         "7868": {
           "name": "Trem",
@@ -907,7 +907,7 @@
           "defenseHome": 3.0,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1476.4
         },
         "123": {
           "name": "Sport Recife",
@@ -915,7 +915,7 @@
           "defenseHome": 0.4484,
           "attackAway": 1.8291,
           "defenseAway": 0.9353,
-          "elo": 1511.7
+          "elo": 1516.1
         },
         "9999": {
           "name": "CEOV Operário",
@@ -931,7 +931,7 @@
           "defenseHome": 2.0757,
           "attackAway": 0.3294,
           "defenseAway": 0.5846,
-          "elo": 1482.2
+          "elo": 1484.0
         },
         "10478": {
           "name": "Humaitá",
@@ -947,7 +947,7 @@
           "defenseHome": 1.1335,
           "attackAway": 0.4357,
           "defenseAway": 1.321,
-          "elo": 1477.3
+          "elo": 1475.0
         },
         "10675": {
           "name": "Ji-Paraná",
@@ -963,7 +963,7 @@
           "defenseHome": 1.0,
           "attackAway": 0.5319,
           "defenseAway": 1.2854,
-          "elo": 1492.4
+          "elo": 1491.8
         },
         "15617": {
           "name": "Fluminense PI",
@@ -971,7 +971,7 @@
           "defenseHome": 3.0,
           "attackAway": 1.0,
           "defenseAway": 1.0,
-          "elo": 1485.8
+          "elo": 1479.7
         },
         "154": {
           "name": "Fortaleza EC",
@@ -979,7 +979,7 @@
           "defenseHome": 0.2,
           "attackAway": 3.0,
           "defenseAway": 1.4433,
-          "elo": 1512.1
+          "elo": 1517.6
         },
         "130": {
           "name": "Gremio",
@@ -987,7 +987,7 @@
           "defenseHome": 0.494,
           "attackAway": 0.2,
           "defenseAway": 0.2,
-          "elo": 1515.2
+          "elo": 1516.1
         },
         "1062": {
           "name": "Atletico-MG",
@@ -995,7 +995,7 @@
           "defenseHome": 0.5043,
           "attackAway": 1.0811,
           "defenseAway": 1.2424,
-          "elo": 1515.9
+          "elo": 1518.6
         },
         "124": {
           "name": "Fluminense",
@@ -1003,7 +1003,7 @@
           "defenseHome": 1.1906,
           "attackAway": 2.0757,
           "defenseAway": 1.4762,
-          "elo": 1511.8
+          "elo": 1516.7
         },
         "134": {
           "name": "Atletico Paranaense",
@@ -1011,7 +1011,7 @@
           "defenseHome": 0.3925,
           "attackAway": 1.7861,
           "defenseAway": 1.672,
-          "elo": 1526.2
+          "elo": 1528.9
         },
         "794": {
           "name": "RB Bragantino",
@@ -1019,7 +1019,7 @@
           "defenseHome": 1.7888,
           "attackAway": 0.4289,
           "defenseAway": 1.3265,
-          "elo": 1489.0
+          "elo": 1496.0
         },
         "127": {
           "name": "Flamengo",
@@ -1027,7 +1027,7 @@
           "defenseHome": 0.2664,
           "attackAway": 0.6061,
           "defenseAway": 0.2,
-          "elo": 1581.7
+          "elo": 1566.7
         },
         "120": {
           "name": "Botafogo",
@@ -1035,7 +1035,7 @@
           "defenseHome": 0.607,
           "attackAway": 0.8851,
           "defenseAway": 0.836,
-          "elo": 1512.5
+          "elo": 1509.4
         },
         "136": {
           "name": "Vitoria",
@@ -1043,7 +1043,7 @@
           "defenseHome": 2.0757,
           "attackAway": 0.2,
           "defenseAway": 0.836,
-          "elo": 1476.7
+          "elo": 1483.6
         },
         "126": {
           "name": "Sao Paulo",
@@ -1051,7 +1051,7 @@
           "defenseHome": 0.4019,
           "attackAway": 0.7544,
           "defenseAway": 0.2026,
-          "elo": 1521.8
+          "elo": 1528.8
         },
         "129": {
           "name": "Ceara",
@@ -1059,7 +1059,7 @@
           "defenseHome": 1.0378,
           "attackAway": 0.2,
           "defenseAway": 0.836,
-          "elo": 1477.5
+          "elo": 1484.3
         },
         "121": {
           "name": "Palmeiras",
@@ -1067,7 +1067,7 @@
           "defenseHome": 0.4231,
           "attackAway": 0.2,
           "defenseAway": 0.9464,
-          "elo": 1514.4
+          "elo": 1506.5
         },
         "151": {
           "name": "Goias",
@@ -1075,7 +1075,7 @@
           "defenseHome": 0.2,
           "attackAway": 0.2,
           "defenseAway": 1.3084,
-          "elo": 1490.6
+          "elo": 1490.7
         }
       }
     }
