@@ -1,0 +1,43 @@
+name: Treinar modelo Vyntara
+
+on:
+  schedule:
+    - cron: "0 9 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependencias
+        working-directory: training
+        run: pip install -r requirements.txt
+
+      - name: Rodar pipeline
+        working-directory: training
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: python build_model.py
+
+      - name: Publicar arquivos
+        run: |
+          mkdir -p public
+          cp training/output/model.json public/model.json
+          cp training/output/predictions.json public/predictions.json
+
+      - name: Commit e push
+        run: |
+          git config user.name "vyntara-bot"
+          git config user.email "bot@vyntara.local"
+          git add public/model.json public/predictions.json
+          git commit -m "Atualiza modelo (auto)" || echo "sem mudancas"
+          git push
