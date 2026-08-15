@@ -1,0 +1,9 @@
+# Pipeline de treino do Vyntara. Instale com:  pip install -r requirements.txt
+requests>=2.31
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+# Opcional (o pipeline funciona sem, caindo para GradientBoosting do sklearn):
+# xgboost>=2.0
+# Opcional (analise em texto com GPT-4o-mini):
+# openai>=1.30

@@ -1,0 +1,46 @@
+# Copie este arquivo para  .github/workflows/train.yml  no repositorio do MODELO
+# (o repo que hospeda o model.json, ex: vyntara-model).
+name: Treinar modelo Vyntara
+
+on:
+  schedule:
+    - cron: "0 9 * * *"   # todo dia as 09:00 UTC (06:00 no horario de Brasilia)
+  workflow_dispatch: {}   # permite rodar manualmente pelo botao "Run workflow"
+
+permissions:
+  contents: write
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependencias
+        working-directory: training
+        run: pip install -r requirements.txt
+
+      - name: Rodar pipeline
+        working-directory: training
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          # OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}   # opcional (analise em texto)
+        run: python build_model.py
+
+      - name: Publicar arquivos
+        run: |
+          mkdir -p public
+          cp training/output/model.json public/model.json
+          cp training/output/predictions.json public/predictions.json
+
+      - name: Commit e push
+        run: |
+          git config user.name "vyntara-bot"
+          git config user.email "bot@vyntara.local"
+          git add public/model.json public/predictions.json
+          git commit -m "Atualiza modelo (auto)" || echo "sem mudancas"
+          git push
