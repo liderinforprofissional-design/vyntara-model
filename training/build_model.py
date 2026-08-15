@@ -61,6 +61,8 @@ def main():
     hfa = cfg.get("eloHomeAdvantage", 65)
     weights = cfg.get("ensembleWeights", {"poisson": 0.34, "elo": 0.33, "ml": 0.33})
     use_stacker = cfg.get("useLogisticStacker", True)
+    use_odds = cfg.get("useOdds", True)
+    odds_weight = cfg.get("oddsWeight", 0.4)
     out_dir = cfg.get("outputDir", "output")
     os.makedirs(out_dir, exist_ok=True)
 
@@ -122,7 +124,8 @@ def main():
             rows = [(pp, ep, mp) for (pp, ep, mp) in _pillars_over(matches, pois_full, elo_pre_full, clf_full, hfa)]
             stacker = ensemble.fit_stacker(rows, y_full)
 
-        season = max(seasons)
+        # Proximos jogos sao da temporada ATUAL (ano corrente), nao da ultima treinada.
+        season = dt.date.today().year
         try:
             upcoming = api.upcoming_fixtures(lid, season, cfg.get("predictAheadDays", 7))
         except Exception as e:
@@ -142,6 +145,14 @@ def main():
             else:
                 final = ensemble.weighted_average(pois_p, elo_p, ml_p, weights)
 
+            # 4o sinal: odds do mercado (casas de apostas), se disponivel.
+            market = api.odds_1x2(u["id"]) if use_odds else None
+            if market:
+                w = odds_weight
+                blended = {k: (1 - w) * final[k] + w * market[k] for k in ("home", "draw", "away")}
+                tot = sum(blended.values()) or 1.0
+                final = {k: v / tot for k, v in blended.items()}
+
             bb = best_bet(final, extra["over25"], extra["btts"])
             text = ""
             if cfg.get("useGptAnalysis", False):
@@ -151,6 +162,7 @@ def main():
             predictions[str(u["id"])] = {
                 "home": u["homeName"], "away": u["awayName"],
                 "leagueId": lid,
+                "leagueName": u["leagueName"],
                 "kickoff": u["date"].isoformat() if u["date"] else None,
                 "probs": {kk: round(vv, 4) for kk, vv in final.items()},
                 "expected": {"home": round(extra["lh"], 2), "away": round(extra["la"], 2)},
@@ -158,6 +170,7 @@ def main():
                 "btts": round(extra["btts"], 4),
                 "mostLikelyScore": extra["score"],
                 "bestBet": bb,
+                "market": {kk: round(vv, 4) for kk, vv in market.items()} if market else None,
                 "analysis": text,
             }
 

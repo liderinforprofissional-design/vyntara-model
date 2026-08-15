@@ -10,6 +10,8 @@
   "eloHomeAdvantage": 65,
   "ensembleWeights": { "poisson": 0.34, "elo": 0.33, "ml": 0.33 },
   "useLogisticStacker": true,
+  "useOdds": true,
+  "oddsWeight": 0.4,
   "predictAheadDays": 7,
   "useGptAnalysis": false,
   "cacheDir": "cache",

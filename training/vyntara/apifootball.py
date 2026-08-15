@@ -75,6 +75,15 @@ class ApiFootball:
         )
         return [normalize(x) for x in data.get("response", []) if not _is_finished(x)]
 
+    def odds_1x2(self, fixture_id: int) -> dict | None:
+        """Probabilidades 1X2 do mercado (casas de apostas) para um jogo, ou None.
+        Converte a odd decimal em probabilidade e remove a margem da casa."""
+        try:
+            data = self._get("odds", {"fixture": fixture_id, "bet": 1}, cache=False)
+        except Exception:
+            return None
+        return market_probs_from_odds(data.get("response", []))
+
 
 def _is_finished(item: dict) -> bool:
     short = (((item.get("fixture") or {}).get("status")) or {}).get("short")
@@ -111,3 +120,35 @@ def _parse_date(s: Optional[str]) -> Optional[dt.datetime]:
         return dt.datetime.fromisoformat(s.replace("Z", "+00:00"))
     except ValueError:
         return None
+
+
+def market_probs_from_odds(resp: list) -> Optional[dict]:
+    """Media das odds 1X2 entre as casas -> probabilidade implicita normalizada."""
+    home, draw, away = [], [], []
+    for item in resp:
+        for bk in item.get("bookmakers", []):
+            for bet in bk.get("bets", []):
+                if bet.get("name") != "Match Winner":
+                    continue
+                for v in bet.get("values", []):
+                    try:
+                        o = float(v.get("odd"))
+                    except (TypeError, ValueError):
+                        continue
+                    label = v.get("value")
+                    if label == "Home":
+                        home.append(o)
+                    elif label == "Draw":
+                        draw.append(o)
+                    elif label == "Away":
+                        away.append(o)
+    if not (home and draw and away):
+        return None
+    oh = sum(home) / len(home)
+    od = sum(draw) / len(draw)
+    oa = sum(away) / len(away)
+    ih, idr, ia = 1 / oh, 1 / od, 1 / oa
+    s = ih + idr + ia
+    if s <= 0:
+        return None
+    return {"home": ih / s, "draw": idr / s, "away": ia / s}
