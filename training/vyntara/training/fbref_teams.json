@@ -1,0 +1,23 @@
+{
+  "_comment": "Mapa: nome do time no FBref -> ID do time na API-Football. Ajuste os nomes para baterem EXATAMENTE com o que o FBref/soccerdata retorna (o fetch_fbref.py imprime os nomes encontrados). Sem match, o jogo e ignorado.",
+  "Flamengo": 127,
+  "Palmeiras": 121,
+  "Botafogo (RJ)": 120,
+  "Fluminense": 124,
+  "São Paulo": 126,
+  "Corinthians": 131,
+  "Grêmio": 130,
+  "Internacional": 119,
+  "Atlético Mineiro": 1062,
+  "Fortaleza": 154,
+  "Cruzeiro": 135,
+  "Bahia": 118,
+  "Vasco da Gama": 133,
+  "Red Bull Bragantino": 794,
+  "Athletico Paranaense": 134,
+  "Juventude": 152,
+  "Criciúma": 140,
+  "Cuiabá": 1193,
+  "Vitória": 136,
+  "Atlético Goianiense": 144
+}

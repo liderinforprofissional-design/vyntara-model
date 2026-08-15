@@ -13,7 +13,9 @@
   "useOdds": true,
   "oddsWeight": 0.4,
   "predictAheadDays": 7,
-  "useGptAnalysis": false,
+  "useNews": true,
+  "newsTopN": 10,
+  "useFbref": false,
   "cacheDir": "cache",
   "outputDir": "output"
 }

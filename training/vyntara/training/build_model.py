@@ -21,8 +21,9 @@ import json
 import os
 
 from vyntara import backtest, elo, ensemble, features, poisson
-from vyntara.analysis_gpt import analyze
+from vyntara.analysis_gpt import assess_context
 from vyntara.apifootball import ApiFootball
+from vyntara.news import fetch_headlines
 
 
 def load_config() -> dict:
@@ -63,11 +64,14 @@ def main():
     use_stacker = cfg.get("useLogisticStacker", True)
     use_odds = cfg.get("useOdds", True)
     odds_weight = cfg.get("oddsWeight", 0.4)
+    use_news = cfg.get("useNews", False)
+    news_top_n = cfg.get("newsTopN", 10)
     out_dir = cfg.get("outputDir", "output")
     os.makedirs(out_dir, exist_ok=True)
 
     model_leagues: dict[str, dict] = {}
     predictions: dict[str, dict] = {}
+    news_candidates: list = []   # (score, fixtureId, home, away, over25, btts, final)
     bt_all_preds: list[dict] = []
     bt_all_y: list[int] = []
 
@@ -154,12 +158,8 @@ def main():
                 final = {k: v / tot for k, v in blended.items()}
 
             bb = best_bet(final, extra["over25"], extra["btts"])
-            text = ""
-            if cfg.get("useGptAnalysis", False):
-                text = analyze(u["homeName"], u["awayName"], final,
-                               {"home": extra["lh"], "away": extra["la"]}, bb)
-
-            predictions[str(u["id"])] = {
+            fid = str(u["id"])
+            predictions[fid] = {
                 "home": u["homeName"], "away": u["awayName"],
                 "leagueId": lid,
                 "leagueName": u["leagueName"],
@@ -171,10 +171,34 @@ def main():
                 "mostLikelyScore": extra["score"],
                 "bestBet": bb,
                 "market": {kk: round(vv, 4) for kk, vv in market.items()} if market else None,
-                "analysis": text,
+                "analysis": "",
             }
+            # candidato para a camada de midia (rodada so no Top N global depois)
+            news_candidates.append(
+                (max(final.values()), fid, u["homeName"], u["awayName"],
+                 extra["over25"], extra["btts"], final)
+            )
 
         print(f"  previsoes geradas: {len(upcoming)} jogos")
+
+    # ---- Camada de midia SO nos jogos mais fortes (Top N GLOBAL) --------------
+    # Economia de tokens: em vez de ler noticia de todos, so dos que iriam pro Top 10.
+    if use_news and news_candidates:
+        news_candidates.sort(key=lambda s: s[0], reverse=True)
+        for _score, fid, home, away, over25, btts, final in news_candidates[:news_top_n]:
+            headlines_home = fetch_headlines(home)
+            headlines_away = fetch_headlines(away)
+            text, hi, ai = assess_context(home, away, headlines_home, headlines_away)
+            adj = max(-0.15, min(0.15, hi - ai))
+            if adj != 0.0:
+                final["home"] *= (1 + adj)
+                final["away"] *= (1 - adj)
+                tot = sum(final.values()) or 1.0
+                final = {k: v / tot for k, v in final.items()}
+                predictions[fid]["probs"] = {k: round(v, 4) for k, v in final.items()}
+                predictions[fid]["bestBet"] = best_bet(final, over25, btts)
+            predictions[fid]["analysis"] = text
+        print(f"\nCamada de midia aplicada nos {min(news_top_n, len(news_candidates))} melhores jogos.")
 
     # metricas globais do backtest
     if bt_all_y:

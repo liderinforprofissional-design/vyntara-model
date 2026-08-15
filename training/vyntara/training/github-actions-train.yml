@@ -28,7 +28,7 @@ jobs:
         working-directory: training
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-          # OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}   # opcional (analise em texto)
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}   # camada de midia (useNews)
         run: python build_model.py
 
       - name: Publicar arquivos

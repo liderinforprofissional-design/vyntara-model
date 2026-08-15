@@ -5,5 +5,8 @@ pandas>=2.1
 scikit-learn>=1.4
 # Opcional (o pipeline funciona sem, caindo para GradientBoosting do sklearn):
 # xgboost>=2.0
-# Opcional (analise em texto com GPT-4o-mini):
-# openai>=1.30
+# Camada de midia/contexto (GPT-4o-mini le as manchetes) - necessario se useNews=true:
+openai>=1.30
+# Fase FBref: rodar 'python fetch_fbref.py' no SEU PC (nao no GitHub Actions).
+# Instale so quando for captar o FBref:  pip install soccerdata
+# soccerdata>=1.8

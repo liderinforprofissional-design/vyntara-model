@@ -56,6 +56,24 @@ sozinho todo dia. Voce so configura uma vez, pelo navegador.
 - Quer rodar na hora? Aba **Actions -> Run workflow**.
 - Quer mudar as ligas? Edite `training/config.json` no proprio GitHub (botao do lapis).
 
+## Camada de midia (GPT-4o-mini) - opcional
+O robo pode ler as manchetes dos times (Google News, gratis) e usar o GPT-4o-mini
+para um pequeno ajuste de contexto (lesao, suspensao, fase) + a analise em texto.
+
+Custa tokens da sua OpenAI (pouco - so nos jogos futuros). Para ligar:
+1. **Settings -> Secrets and variables -> Actions -> New repository secret.**
+   Nome: `OPENAI_API_KEY` | Valor: sua chave do GPT-4o-mini. Salve.
+2. No `.github/workflows/train.yml`, na secao `env:` do passo "Rodar pipeline",
+   garanta a linha: `OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}`
+3. Em `training/config.json`, deixe `"useNews": true`.
+4. Re-suba a pasta `training` e rode o workflow.
+
+> Observacoes honestas:
+> - E uma camada **experimental**: nao da pra validar no backtest (nao ha noticia
+>   historica alinhada). Por isso entra com peso pequeno (max +-15%).
+> - So produz efeito quando o `predictions.json` tem jogos (Pro/pipeline). No plano
+>   gratis, com predictions vazio, ela fica pronta mas dormente.
+
 ## Se algo falhar
 - Bolinha **vermelha** na aba Actions: clique nela e me mande o texto do erro (a etapa
   "Rodar pipeline" costuma dizer o motivo, ex: temporada indisponivel no plano gratis).
